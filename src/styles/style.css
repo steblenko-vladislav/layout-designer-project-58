@@ -1,7 +1,38 @@
 /** CSS STYLE **/
+body {
 
-.hello {
-  display: block;
+  font-size: 16px;
+  line-height: 1.6em;
+  color: #2A2626;
 
-  color: #fff;
+  background-image: url(/src/images/background.png);
+}
+
+h1, h2, h3 {
+  font-family: Neucha;
+  line-height: 1.2em;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 34px;
+}
+
+.header {
+  background-image: url(/src/images/background.png);
+}
+
+section {
+  display: flex;
+  justify-content: center;
+
+  width: 1110px;
+  padding: 100px 100px;
 }
