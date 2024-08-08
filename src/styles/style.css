@@ -110,6 +110,7 @@ section {
   padding: 12px 24px 12px 24px;
   background-color: var(--main);
   font-weight: bold;
+  color: var(--white);
 }
 
 .color-main {
