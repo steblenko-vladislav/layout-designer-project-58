@@ -1,4 +1,201 @@
 /** CSS STYLE **/
+/* Переменные*/
+:root {
+  --white: #fff;
+  --white-50: #d7ccc0;
+  --light: #f5f4f0;
+  --primary: #fe8a02;
+  --primary-dark: #42413c;
+  --dark: #2a2626;
+  --dark-50: #908d8b;
+  --brown: #b09a81;
+  --blue: #1085c5;
+
+  --font-size: 16px;
+  --line-height: 1.6em;
+  --width-full: 1100px;
+}
+
+/* Подключение шрифтов */
+
+@font-face {
+  font-family: "Neucha";
+  font-weight: 400;
+  font-style: normal;
+  src: url(/src/fonts/Neucha-Regular.ttf);
+}
+
+/* СТИЛИ СТРУКТУРЫ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  padding-bottom: 100px;  
+}
+
+.section {
+  position: relative;
+  width: 1440px;
+  margin: 0 auto; /*это чтобы как в макете ширина*/
+}
+
+.container {
+  position: relative;
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.two-columns {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.column {
+  width: 50%;
+}
+
+.hero-image {
+  position: absolute;
+  z-index: 2;
+  height: 525px;
+  top: 55px;
+  right: -270px;
+}
+
+
+.pt-100 {
+  padding-top: 100px;
+}
+.pt-50 {
+  padding-top: 50px;
+}
+
+.pb-100 {
+  padding-bottom: 100px;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.mt-50{
+  margin-top: 50px;
+}
+/* СТИЛИ ОФОРМЛЕНИЯ */
+
+/* Фон */
+
+.section::before {
+  position: absolute;
+  content: "";
+  background-image: url(/images/background.png);
+  background-repeat: repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.1;
+}
+
+/* Цвета фона */
+
+.bg-white { 
+  background-color: var(--white);
+}
+
+.bg-light {
+  background-color: var(--light);
+}
+
+.bg-brown {
+  background-color: var(--brown);
+}
+
+.bg-primary-dark {
+  background-color: var(--primary-dark);
+}
+
+/* Цвета текста */
+
+.text-primary {
+  color: var(--primary);
+}
+
+.text-secondary {
+  color: var(--dark-50);
+}
+
+.text {
+  color: var(--dark);
+}
+
+.text-primary-dark {
+  color: var(--primary-dark);
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.text-white-50 {
+  color: var(--white-50);
+}
+
+/* Шрифты,типографика*/
+
+* {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6em;
+  font-size: 16px;
+  color: var(--dark);
+}
+
+h1, h2, h3 {
+  font-family: "Neucha", cursive;
+  font-weight: 400;
+  line-height: 1.2em;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 34px;
+}
+
+.inherit-font {
+  font-size: inherit;
+  line-height: inherit;
+  font-family: inherit;
+}
+
+.btn-primary {
+  padding: 12px 24px 12px 24px;
+  background-color: var(--primary);
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--white);
+  text-decoration: none;
+}
+
+/**
 :root {
   --white: #fff;
   --translucent-white: #d7ccc0;
@@ -116,3 +313,4 @@ section {
 .color-main {
   color: var(--main);
 }
+**/
