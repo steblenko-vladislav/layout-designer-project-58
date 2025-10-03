@@ -96,9 +96,14 @@ body {
   flex-basis: 50%;
 }
 
+.h1-header {
+position: relative;
+z-index: 2;
+}
 
 .hero-image {
   position: absolute;
+  z-index: 1;
   height: 525px;
   top: 55px;
   right: -270px;
