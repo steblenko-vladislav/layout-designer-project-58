@@ -157,7 +157,7 @@ body {
 }
 
 .mblock-1em {
-
+  
   margin-block: 1em;
 }
 
@@ -282,6 +282,10 @@ h1, h2, h3 {
   font-family: "Neucha", cursive;
   font-weight: 400;
   line-height: 1.2em;
+}
+
+.neucha {
+  font-family: "Neucha", cursive;
 }
 
 h1 {
